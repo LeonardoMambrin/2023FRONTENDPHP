@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conferencia Bs As</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#pagina">
+    <header>
+        <!--Barra de navegación-->
+        <div class="fixed-top container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark pagina-scrollspy " data-bs-theme="dark">
+                <div class="container my-0">
+                    <div class="col-3">
+                        <a class="navbar-brand fs-5 gx-5" href="#"><img src="img/logo4.png"
+                                alt="logo de codo a codo">Conf
+                            Bs As</a>
+                    </div>
+
+                    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#SeccionOradores">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#SeccionLugar">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#SeccionFormulario">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-success"" href=" /tickets.html#SeccionFormularioTk">Comprar
+                                    tickets</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+            </nav>
+        </div>
+
+        <!--Carrusel-->
+        <div class="container"></div>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="opacity-85"><img src="img/carrusel_1.jpg" class="d-block w-100"
+                            alt="primera imagen referente a Edificio Palacio de Aguas Corrientes ">
+                    </div>
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--Texto dentro del Carrusel-->
+                        <div class="container d-flex justify-content-end">
+                            <div class="col-md-12 col-lg-8">
+                                <h2 class="text-end">Conf Bs As</h2>
+                                <p class="text-end lh-base ">Bs As llega por primera vez a Argentina. Un evento
+                                    para
+                                    compartir
+                                    nuestra
+                                    comunidad el
+                                    conocimiento y experiencia de los expertos que están creando el futuro de Internet.
+                                    Ven
+                                    a
+                                    conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de
+                                    primer
+                                    nivel que tenemos para ti. Te esperamos!</p>
+                            </div>
+
+                        </div>
+                        <!--Botones dentro del Carrusel-->
+                        <div class="container d-flex justify-content-end mb-5 pb-5">
+                            <a class="btn btn-outline-secondary text-white mx-1 border border-white"
+                                href="#SeccionFormulario" role="button">Quiero ser
+                                orador</a>
+
+                            <a class="btn text-white btn btn-success mx-1" href="/tickets.html" role="button">Comprar
+                                tickets</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="opacity-85"><img src="img/ba2.jpg" class="d-block w-100 "
+                            alt="segunda imagen referente a dos edificios con plaza seca en medio colmada de mesas de bareas">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--Texto dentro del Carrusel-->
+                        <div class="container d-flex justify-content-end">
+                            <div class="col-md-12 col-lg-8">
+                                <h2 class="text-end">Conf Bs As</h2>
+                                <p class="text-end lh-base ">Bs As llega por primera vez a Argentina. Un evento
+                                    para
+                                    compartir
+                                    nuestra
+                                    comunidad el
+                                    conocimiento y experiencia de los expertos que están creando el futuro de Internet.
+                                    Ven
+                                    a
+                                    conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de
+                                    primer
+                                    nivel que tenemos para ti. Te esperamos!</p>
+                            </div>
+
+                        </div>
+                        <!--Botones dentro del Carrusel-->
+                        <div class="container d-flex justify-content-end mb-5 pb-5">
+                            <a class="btn btn-outline-secondary text-white mx-1 border border-white"
+                                href="#SeccionFormulario" role="button">Quiero ser
+                                orador</a>
+
+                            <a class="btn text-white btn btn-success mx-1" href="/tickets.html" role="button">Comprar
+                                tickets</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="opacity-85"><img src="img/ba3.jpg" class="d-block w-100"
+                            alt="tercera imagen referente a Obelisco con entorno de Av 09 de Julio cruce Av Corrientes">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <!--Texto dentro del Carrusel-->
+                        <div class="container d-flex justify-content-end">
+                            <div class="col-md-12 col-lg-8">
+                                <h2 class="text-end">Conf Bs As</h2>
+                                <p class="text-end lh-base ">Bs As llega por primera vez a Argentina. Un evento
+                                    para
+                                    compartir
+                                    nuestra
+                                    comunidad el
+                                    conocimiento y experiencia de los expertos que están creando el futuro de Internet.
+                                    Ven
+                                    a
+                                    conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de
+                                    primer
+                                    nivel que tenemos para ti. Te esperamos!</p>
+                            </div>
+
+                        </div>
+                        <!--Botones dentro del Carrusel-->
+                        <div class="container d-flex justify-content-end mb-5 pb-5">
+                            <a class="btn btn-outline-secondary text-white mx-1 border border-white"
+                                href="#SeccionFormulario" role="button">Quiero ser
+                                orador</a>
+
+                            <a class="btn text-white btn btn-success mx-1" href="/tickets.html" role="button">Comprar
+                                tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="SeccionOradores" class="container p-5">
+        <!--ANCLA DE BARRA NAVEGACION-->
+        <h6 class="text-center"><small class="text-muted">CONOCE A LOS </small></h6>
+        <h2 class="text-center">ORADORES</h2>
+        <div class="row d-flex justify-content-between g-4">
+            <div class="col-md-4 col-sm-6">
+                <!--PRIMER TARJETA-->
+                <div class="card  width: 18rem">
+                    <!--IMAGEN-->
+                    <img src="img/card_1.jpg" class="card-img-top" alt="imagen de primer orador">
+                    <div class="card-body">
+                        <span class="badge text-bg-warning">JavaScript</span>
+                        <span class="badge text-bg-info">React</span>
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <div class="overflow-y-scroll" style="height:15rem;">
+                            <p class="card-text">
+                                Steven Paul Jobs (nacido en San Francisco, 24 de febrero de 1955) es un empresario,
+                                diseñador industrial, magnate empresarial, propietario de
+                                medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple y
+                                máximo
+                                accionista individual de The Walt Disney Company.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <!--SEGUNDA TARJETA-->
+                <div class="card width: 18rem overflow-y-hidden">
+                    <!--IMAGEN-->
+                    <img src="img/card_2.jpg" class="card-img-top" alt="imagen de segundo orador">
+                    <div class="card-body">
+                        <span class="badge text-bg-warning">JavaScript</span>
+                        <span class="badge text-bg-info">React</span>
+                        <h5 class="card-title">Bill Gates</h5>
+                        <div class="overflow-y-scroll" style="height:15rem;">
+                            <p class="card-text h-75">
+                                William Henry Gates III (nacido en Seattle, Washington; 28 de octubre de 1955), más
+                                conocido
+                                como Bill Gates, es un magnate empresarial, desarrollador de software, inversor, autor y
+                                filántropo
+                                estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia
+                                Paul
+                                Allen.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <!--TERCERA TARJETA-->
+                <div class="card width: 18rem overflow-y-hidden">
+                    <!--IMAGEN-->
+                    <img src=" img/card_3.jpg" class="card-img-top" alt="imagen de tercer orador">
+                    <div class="card-body">
+                        <span class="badge text-bg-secondary">Negocios</span>
+                        <span class="badge text-bg-danger">Startups</span>
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <div class="overflow-y-scroll" style="height:15rem;">
+                            <p class="card-text">
+                                Augusta Ada King, condesa de Lovelace (nacida en Londres, 10 de diciembre de
+                                1815),conocida
+                                habitualmente como Ada
+                                Lovelace. Fue la primera en reconocer que la
+                                máquina tenía aplicaciones más allá del cálculo puro, por lo que se la considera como la
+                                primera programadora de
+                                ordenadores.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <!--ANCLA DE BARRA NAVEGACION-->
+    <section id="SeccionLugar" class="container-fluid mx-0 px-0">
+        <!--TARJETA HORIZONTAL-->
+        <div class="card text-bg-dark mb-3 rounded-0" style="width: 100%;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <!--IMAGEN-->
+                    <img src="img/honolulu.jpg" class="img-fluid rounded-start" alt="imagen de playa">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h4 class="card-title">Bs As - Octubre</h4>
+                        <p class="card-text">
+                            Buenos Aires es la provincia y la localidad mas grande del estado de Argentina En Estados
+                            Unidos, Honalulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque
+                            el nombre de Honalulu se refiere al área urbana en la costa sureste de la isla de Oahu, la
+                            ciudad y el condado de Honalulu han formado una ciudad-estado consolidada que cubre toda la
+                            ciudad (aproximadamente 600 km2 de superficie).
+                        </p>
+                        <a class="btn btn-outline-secondary text-white mx-1 border border-white" href="#SeccionLugar"
+                            role="button">Conocé Más</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <!--ANCLA DE BARRA NAVEGACION-->
+    <section id="SeccionFormulario" class="container py-5">
+        <h6 class=" text-center"><small class="text-muted"> CONVIERTETE EN UN</small></h6>
+        <h2 class="text-center">ORADOR</h2>
+        <p class="text-center">
+            Anótate como orador para dar una <abbr title="attribute">charla ignite</abbr>.
+            Cuéntanos de qué quieres
+            hablar! </p>
+        <div class="col-12 d-flex justify-content-center">
+            <!--FORMULARIO-->
+            <form class="row g-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Sobre qué quieres hablar?</label>
+                    <div id="floatingTextarea2help" class="form-text">Recuerda incluir un título para tu charla</div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!--class="bg-secondary text-white bg-opacity-30 py-5"-->
+    <footer class="text-white py-5">
+        <div class="container">
+            <div class="row justify-content-between g-2">
+                <div class="col">Preguntas Frecuentes</div>
+                <div class="col">Contáctanos</div>
+                <div class="col">Prensa</div>
+                <div class="col">Conferencias</div>
+                <div class="col">Términos y Condiciones</div>
+                <div class="col">Privacidad</div>
+                <div class="col">Estudiantes</div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

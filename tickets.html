@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conferencia Bs As</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#pagina">
+    <header>
+        <!--Barra de navegación-->
+        <div class="fixed-top container-fluid bg-dark ">
+
+            <nav class="navbar navbar-expand-lg bg-dark pagina-scrollspy " data-bs-theme="dark">
+                <div class="container my-0">
+                    <div class="col-3">
+                        <a class="navbar-brand fs-5 gx-5" href="#"><img src="img/logo4.png"
+                                alt="logo de codo a codo">Conf
+                            Bs As</a>
+                    </div>
+
+                    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">La Conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html#SeccionOradores">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html#SeccionLugar">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html#SeccionFormulario">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-success"" href=" #SeccionFormularioTk">Comprar tickets</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+            </nav>
+        </div>
+
+
+
+    </header>
+
+
+
+    <div class="container pt-5 mt-5">
+        <div class="row d-flex justify-content-between g-2">
+            <div class="col-md-4 col-sm-12">
+                <!--PRIMER TARJETA-->
+                <div class="card  width: 12rem border border-primary border-3 rounded rounded-0 p-3 car">
+                    <div class="card-body text-center">
+                        <a id="cardEstudiante" class="btn fw-medium fs-4 stretched-link">Estudiante</a>
+                        <p class="card-text fs-5">
+                            Tienen un descuento
+                        </p>
+                        <h4 class="card-title">80%</h4>
+                        <p class="card-text">
+                            <small class="text-muted">* presentar documentación </small>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <!--SEGUNDA TARJETA-->
+                <div class="card  width: 12rem border border-success border-3 rounded rounded-0 p-3 car">
+                    <div class="card-body text-center">
+                        <a id="cardTrainee" class="btn fw-medium fs-4 stretched-link">Trainee</a>
+                        <p class="card-text fs-5">
+                            Tienen un descuento
+                        </p>
+                        <h4 class="card-title">50%</h4>
+                        <p class="card-text">
+                            <small class="text-muted">* presentar documentación </small>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <!--TERCERA TARJETA-->
+                <div class="card  width: 12rem border border-warning border-3 rounded rounded-0 p-3 car">
+                    <div class="card-body text-center">
+                        <a id="cardJunior" class="btn fw-medium fs-4 stretched-link">Junior</a>
+                        <p class="card-text fs-5">
+                            Tienen un descuento
+                        </p>
+                        <h4 class="card-title">15%</h4>
+                        <p class="card-text">
+                            <small class="text-muted">* presentar documentación </small>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--ANCLA DE BARRA NAVEGACION-->
+    <section id="SeccionFormularioTk" class="container pt-2 pb-5">
+        <h6 class=" text-center"><small class="text-muted"> VENTA</small></h6>
+        <h2 class="text-center">VALOR DE TICKET $200</h2>
+
+
+        <div class="col-12 d-flex justify-content-center">
+            <!--FORMULARIO-->
+            <form class="row g-2">
+                <div class="col position-relative">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre"
+                        name="nombre">
+                    <p class="text-danger fw-semibold fst-italic fs-6 " id="errorNombre"></p>
+
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido"
+                        name="apellido">
+                    <p class="text-danger fw-semibold fst-italic fs-6 " id="errorApellido"></p>
+                </div>
+
+                <div class="row g-2">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo"
+                        aria-label="Correo" id="email" name="email">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    <p class="text-danger fw-semibold fst-italic fs-6 " id="errormail"></p>
+
+                </div>
+                <div class="row g-2">
+                    <div class="col">
+                        <label for="cantidad" class="form-label text-muted">Cantidad</label>
+                        <input type="number" class="form-control" min="1" value="1" id="cantidad">
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="categoriaDescuento" class="form-label text-muted">Categoría</label>
+                            <select class="form-select text-muted" id="categoriaDescuento"
+                                aria-label="Default select example">
+                                <option value="1">Sin descuendo</option>
+                                <option value="2">Estudiante</option>
+                                <option value="3">Trainee</option>
+                                <option value="4">Junior</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-2">
+                    <p class="text-success fw-semibold fst-italic fs-6 " id="camposCorrectos"></p>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col d-grid">
+                        <p class="bg-info text-info fw-bolder fs-5 p-3 mb-2 border border-info border-2 rounded-2"
+                            style="--bs-bg-opacity: .25" id="campoTotalEntradas">
+                            Total a
+                            Pagar: $</p>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class=" col-6 d-grid">
+                            <button type="button" class="btn btn-success btn-lg" id="borrar">Borrar</button>
+                        </div>
+
+                        <div class=" col-6 d-grid">
+                            <button type="button" class="btn btn-success btn-lg" id="enviar">Resumen</button>
+                        </div>
+
+
+                    </div>
+
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <footer class="text-white py-5">
+        <div class="container">
+            <div class="row justify-content-between g-2">
+                <div class="col">Preguntas Frecuentes</div>
+                <div class="col">Contáctanos</div>
+                <div class="col">Prensa</div>
+                <div class="col">Conferencias</div>
+                <div class="col">Términos y Condiciones</div>
+                <div class="col">Privacidad</div>
+                <div class="col">Estudiantes</div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
