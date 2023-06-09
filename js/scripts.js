@@ -92,20 +92,20 @@ de formulario de pagina tickets*/
 
 function precioEntradas() {
     if (document.getElementById("categoriaDescuento").value == 1) {
-        cantidadEntradas = cantidad.valueAsNumber;
+        cantidadEntradas = Math.trunc(cantidad.valueAsNumber);
         valorEntrada = cantidadEntradas * 200;
         document.getElementById("campoTotalEntradas").innerHTML = "Total a Pagar: $ " + valorEntrada.toFixed(2) + "  (entrada de público general - no corresponde descuento)";
     } else if (document.getElementById("categoriaDescuento").value == 2) {
-        cantidadEntradas = cantidad.valueAsNumber;
+        cantidadEntradas = Math.trunc(cantidad.valueAsNumber);
         valorEntrada = cantidadEntradas * 40;
         document.getElementById("campoTotalEntradas").innerHTML = "Total a Pagar: $ " + valorEntrada.toFixed(2) + "  (entrada categoría estudiante con descuento de 80% incluido)";
 
     } else if (document.getElementById("categoriaDescuento").value == 3) {
-        cantidadEntradas = cantidad.valueAsNumber;
+        cantidadEntradas = Math.trunc(cantidad.valueAsNumber);
         valorEntrada = cantidadEntradas * 100;
         document.getElementById("campoTotalEntradas").innerHTML = "Total a Pagar: $ " + valorEntrada.toFixed(2) + "  (entrada categoría trainee con descuento de 50% incluido)";
     } else if (document.getElementById("categoriaDescuento").value == 4) {
-        cantidadEntradas = cantidad.valueAsNumber;
+        cantidadEntradas = Math.trunc(cantidad.valueAsNumber);
         valorEntrada = cantidadEntradas * 170;
         document.getElementById("campoTotalEntradas").innerHTML = "Total a Pagar: $ " + valorEntrada.toFixed(2) + "  (entrada categoría junior con descuento de 15% incluido)";
     } else {
